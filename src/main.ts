@@ -42,7 +42,6 @@ const extrudeSettings = {
   bevelSegments: 5
 };
 
-const pipeGeo = new THREE.CylinderGeometry(0.10, 0.10, 5,12,2);
 
 const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
 //const material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
@@ -51,8 +50,6 @@ const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
       specular: 0x80ff80,
       shininess: 75  // Shiny effect
     });
-
-const pipe = new THREE.Mesh(pipeGeo, material);
 
 const algo = new THREE.Mesh(geometry, material);
 
