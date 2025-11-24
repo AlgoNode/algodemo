@@ -12,9 +12,27 @@
       canvas {
         display: block;
       }
+      #fullscreen-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: black;
+        border: 3px solid #00ff00;
+        color: #00ff00;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        border-radius: 4px;
+        z-index: 1000;
+      }
+      #fullscreen-btn:hover {
+        background-color: #1a1a1a;
+      }
     </style>
   </head>
   <body>
+    <button id="fullscreen-btn">Fullscreen</button>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
